@@ -22,9 +22,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  justify-content: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
 }
-
+h2 {
+  color: black;
+  font-size: 28px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,7 +41,7 @@
   text-align: left;
   width: 300px;
   padding: 15px 30px;
-  margin-top: 30px;
+  margin: 30px;
 }
 input[type=text] {
   padding: 7px;
@@ -57,6 +62,36 @@ td, th {
 }
 tbody th {
   border: 1px solid lightseagreen;
+}
+.reg-form, .conv-form {
+  width: 300px;
+  text-align: left;
+  color: black;
+  margin: 30px;
+  margin-top: 0;
+  font-size: 16px;
+}
+.reg-form label, .conv-form label {
+  font-weight: bold;
+  line-height: 45px;
+}
+.reg-form p, .conv-form p {
+  margin-bottom: 0;
+}
+.reg-form input, .conv-form input {
+  margin: 0px;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+}
+input[type=submit] {
+margin-top: 20px;
+width: 100px;
+height: 40px;
+font-size: 16px;
+padding: 0;
 }
 @keyframes App-logo-spin {
   from {

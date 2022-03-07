@@ -1,6 +1,8 @@
 import './App.css';
 import ControledComponent from './components/ControledComponent';
 import FilteredProductTable from './components/FilteredProductTable';
+import RegistrationForm from './components/homework/Task1';
+import СonversionForm from './components/homework/Task2';
 import PropTypesExample from './components/PropTypesExample';
 
 const PRODUCTS = [
@@ -19,6 +21,8 @@ function App() {
         {/* <ControledComponent /> */}
         {/* <PropTypesExample name="Alex" age={25} /> */}
         <FilteredProductTable products={PRODUCTS} />
+        <RegistrationForm />
+        <СonversionForm />
       </header>
     </div>
   );

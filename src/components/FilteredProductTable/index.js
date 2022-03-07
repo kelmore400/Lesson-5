@@ -25,7 +25,10 @@ class FilteredProductTable extends React.Component {
     render() {
         console.log(this.state);
         return (
-            <div className="simple-form"><SearchBar 
+            <div>
+            <h2>Work at Class</h2>
+            <div className="simple-form">
+            <SearchBar 
             filterText={this.state.filterText}
             onFilterTextChange={this.handleFilterTextChange}
             onInStockChange={this.handleInStockOnly}
@@ -36,6 +39,7 @@ class FilteredProductTable extends React.Component {
             inStockOnly={this.state.inStockOnly}
             products={this.props.products}
             />
+            </div>
             </div>
         )
     }
